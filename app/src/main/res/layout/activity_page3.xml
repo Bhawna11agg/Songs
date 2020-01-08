@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".song1"
+    android:orientation="vertical"
+    android:background="#000000"
+  >
+
+    <ImageView
+        android:id="@+id/imagetransfer"
+        android:layout_width="match_parent"
+        android:layout_height="353dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="1"
+        android:textColor="#FFFFFF"
+        android:text="TextView"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/buttonu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:onClick="onClick1"
+        android:backgroundTint="#000000"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>

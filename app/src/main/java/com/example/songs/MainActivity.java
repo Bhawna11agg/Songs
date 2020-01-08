@@ -15,7 +15,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
-ImageView i0,i1,i2,i3,i4,i5,k;
+    public static int types;
+    ImageView i0,i1,i2,i3,i4,i5,k;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,7 +53,9 @@ ImageView i0,i1,i2,i3,i4,i5,k;
         i5.setImageDrawable(roundedBitmapDrawable5);
     }
     public void onClick(View v){
+        types=v.getId();
         Intent i=new Intent(this,songlist.class);
+        i.putExtra("types",v.getId());
         startActivity(i);
     }
 }
