@@ -23,7 +23,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewAdapter> {
     @Override
     public ViewAdapter onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View itemView = inflater.inflate(R.layout.choice_song, parent, false);
+        View itemView = inflater.inflate(R.layout.page2_card, parent, false);
         return new ViewAdapter(itemView);
     }
     @Override
